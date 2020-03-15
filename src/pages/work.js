@@ -9,7 +9,7 @@ import TextCard from '../components/textcard'
 
 const Work = () => (
     <>
-        <SEO title="Page two" />
+        <SEO title="Work and Projects" />
         <h2>Work & Projects</h2>
         <span style={{display:'flex'}}>
           {Object.values(workConstants).map((each, key) => <TextCard {...each} />)}

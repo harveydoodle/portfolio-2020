@@ -7,7 +7,7 @@ import TextCard from '../components/textcard'
 
 const Contact = () => (
     <>
-        <SEO title="Page two" />
+        <SEO title="Contact info" />
         <h2>Contact</h2>
         <span style={{display:'flex', justifyContent:'center'}}>
         <h3>Resume</h3>
