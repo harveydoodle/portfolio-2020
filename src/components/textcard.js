@@ -2,14 +2,15 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import Image from './image';
+import ProjectImage from './projectimage';
 
-const ImageTextCard = ({ text = '', title = '' }) => {
+const colors = ['pink','grey','lightblue']
+
+const TextCard = ({ text = '', title = '', color }) => {
     return (
         // make responsive
-        <span style={{ display: 'flex', margin: '10px' }}>
-            <Image style={{flex:1, height:50, width: 50, maxWidth:50}} />
-            <Image style={{flex:1, height:50, width: 50, maxWidth:50}} />
-            <span style={{flex:2,  margin: 0 }}>
+        <span style={{ display: 'flex', margin: '10px', flex: 1, backgroundColor:color, padding: "10px", borderRadius: 6 }}>
+            <span style={{ margin: 0 }}>
               <h4 style={{ margin: 0 }}>
                   {title}
               </h4>
@@ -21,12 +22,12 @@ const ImageTextCard = ({ text = '', title = '' }) => {
     );
 };
 
-ImageTextCard.propTypes = {
+TextCard.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-ImageTextCard.defaultProps = {
+TextCard.defaultProps = {
   siteTitle: ``,
 }
 
-export default ImageTextCard
+export default TextCard

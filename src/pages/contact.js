@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import ImageTextCard from '../components/imagetextcard'
+import TextCard from '../components/textcard'
 
 const Contact = () => (
     <>
