@@ -25,13 +25,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={'Check based on scroll positin?'} />
+      <Header siteTitle={''} />
       <div
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `7rem 0 1.0875rem 1.45rem`,
-          // height: `200vh`,
+          padding: `7rem 0.5rem 1.0875rem 0.5rem`,
         }}
       >
         <main>{children}</main>
