@@ -7,13 +7,14 @@ import { workConstants } from '../constants/work'
 import TextCard from '../components/textcard'
 import ProjectImage from '../components/projectimage';
 
-const ImageTextCard = ({ workData }) => {
-  if (!workData) {
+const ImageTextCard = ({ workData, visible }) => {
+  console.log('ImageTextCard hit')
+  if (!visible) {
     return null
   }
   return (
     <>
-    <div style={{display:'flex'}}>
+    <div key={workData.id} class="fadeMe" style={{display:'flex'}}>
     <ProjectImage style={{ flex:1, margin:'0 20px' }} image={workData.images[0]}/>
     <ProjectImage style={{ flex:1, margin:'0 20px' }} image={workData.images[1]}/>
     <span style={{flex:2, margin:'0 10px'}}>
@@ -31,13 +32,14 @@ const ImageTextCard = ({ workData }) => {
 
 const Work = () => {
   const [ work, setWork ] = useState(null);
+  const [ visible, setVisible ] = useState(false);
   const workKey = Object.keys(workConstants)[work];
   const workData = workConstants[workKey];
-// useEffect(() => {
-//     // Update the document title using the browser API
-//     // document.title = `You clicked ${count} times`;
-//   });
 
+  const handleClick = key => {
+    setVisible(true)
+    setWork(key)
+  }
   return (
     <>
         <SEO title="Work and Projects" />
@@ -45,11 +47,11 @@ const Work = () => {
         <span style={{display:'flex'}}>
           {Object.values(workConstants).map(
             (each, key) => (
-              <TextCard {...each} key={key} onClick={() => setWork(key)} />
+              <TextCard {...each} key={key} onClick={()=>handleClick(key)} />
             )
           )}
         </span>
-        <ImageTextCard workData={workData} />
+        <ImageTextCard workData={workData} visible={visible} />
     </>
   );
 }

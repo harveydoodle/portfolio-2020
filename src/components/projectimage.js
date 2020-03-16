@@ -21,7 +21,6 @@ export default class ProjectImage extends Component {
   };
 
   render() {
-    console.log('e?')
     const { image } = this.props;
 
     // if (!constants.USE_LOCAL) {s
