@@ -6,23 +6,25 @@ import SEO from "../components/seo"
 
 import TextCard from '../components/textcard'
 
+import resume from '../files/resume.pdf'
+
 const Contact = () => (
     <>
         <SEO title="Contact info" />
         <h2>Contact</h2>
         <span style={{display:'flex', justifyContent:'center'}}>
-            <span style={{fontSize: '2rem', margin: '0 6px'}}>
+            <a style={{fontSize: '2rem', margin: '0 6px'}} target="_blank" href={resume}>
                 <FontAwesomeIcon icon="file" style={{color:"#000000"}} />
-            </span>
-            <span style={{fontSize: '2rem', margin: '0 6px'}}>
+            </a>
+            <a style={{fontSize: '2rem', margin: '0 6px'}} target="_blank" href="https://github.com/harveydoodle">
                 <FontAwesomeIcon icon={["fab", "github"]} style={{color:"#000000"}} />
-            </span>
-            <span style={{fontSize: '2rem', margin: '0 6px'}}>
+            </a>
+            <a style={{fontSize: '2rem', margin: '0 6px'}} target="_blank" href="mailto:linye.zhang18@gmail.com">
                 <FontAwesomeIcon icon="envelope" style={{color:"#000000"}} />
-            </span>
-            <span style={{fontSize: '2rem', margin: '0 6px'}}>
+            </a>
+            <a style={{fontSize: '2rem', margin: '0 6px'}} target="_blank" href="https://www.linkedin.com/in/annielyzhangs">
                 <FontAwesomeIcon icon={["fab", "linkedin"]} style={{color:"#000000"}} />
-            </span>
+            </a>
         </span>
     </>
 )
