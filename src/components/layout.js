@@ -9,8 +9,14 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faFile, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
 import Header from "./header"
 import "./layout.css"
+
+library.add(fab, faFile, faLinkedin, faEnvelope, faGithub)
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
