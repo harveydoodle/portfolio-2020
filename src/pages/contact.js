@@ -10,10 +10,18 @@ const Contact = () => (
         <SEO title="Contact info" />
         <h2>Contact</h2>
         <span style={{display:'flex', justifyContent:'center'}}>
-        <h3>Resume</h3>
-        <h3>Github</h3>
-        <h3>LinkedIn</h3>
-        <h3>Email</h3>
+            <span style={{fontSize: '2rem', margin: '0 6px'}}>
+                <i class="fa fa-file"></i>
+            </span>
+            <span style={{fontSize: '2rem', margin: '0 6px'}}>
+                <i class="fa fa-github"></i>
+            </span>
+            <span style={{fontSize: '2rem', margin: '0 6px'}}>
+                <i class="fa fa-envelope"></i>
+            </span>
+            <span style={{fontSize: '2rem', margin: '0 6px'}}>
+                <i class="fa fa-linkedin"></i>
+            </span>
         </span>
     </>
 )
