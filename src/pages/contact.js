@@ -5,10 +5,16 @@ import resume from "../files/resume.pdf"
 
 const Contact = () => (
   <>
-    <span style={{ display: "flex", flexWrap: "wrap", margin: "0 0 4rem 0" }}>
+    <span
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        margin: "0 0 4rem 0",
+      }}
+    >
       <a
         rel="noopener noreferrer"
-        style={{ fontSize: "2.5rem", margin: "0 1.1rem" }}
+        style={{ fontSize: "2.3rem", margin: "0 1.2rem 0 0" }}
         target="_blank"
         href={resume}
       >
@@ -16,7 +22,7 @@ const Contact = () => (
       </a>
       <a
         rel="noopener noreferrer"
-        style={{ fontSize: "2.5rem", margin: "0 1.1rem" }}
+        style={{ fontSize: "2.3rem", margin: "0 1.2rem 0 0" }}
         target="_blank"
         href="https://github.com/harveydoodle"
       >
@@ -27,7 +33,7 @@ const Contact = () => (
       </a>
       <a
         rel="noopener noreferrer"
-        style={{ fontSize: "2.5rem", margin: "0 1.1rem" }}
+        style={{ fontSize: "2.3rem", margin: "0 1.2rem 0 0" }}
         target="_blank"
         href="mailto:linye.zhang18@gmail.com"
       >
@@ -35,7 +41,7 @@ const Contact = () => (
       </a>
       <a
         rel="noopener noreferrer"
-        style={{ fontSize: "2.5rem", margin: "0 1.1rem" }}
+        style={{ fontSize: "2.3rem", margin: "0 1.2rem 0 0" }}
         target="_blank"
         href="https://www.linkedin.com/in/annielyzhangs"
       >
