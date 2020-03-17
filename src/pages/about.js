@@ -8,11 +8,8 @@ const About = () => (
     <h2>
       Hi <Emoji symbol="👋" label="wave" /> I'm Annie
     </h2>
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
-      <Blurb
-        text="about me"
-        summary="I am a software developer based in Toronto with a background in finance. Currently, I am working at a startup focused on improving hyperlocal communities."
-      />
+    <div style={{ flexWrap: "wrap" }}>
+      <Blurb summary="I am a software developer based in Toronto with a background in finance. Currently, I am working at a startup focused on improving hyperlocal communities." />
       <Blurb
         text="tech stack"
         summary="JavaScript / HTML / CSS / React / React Native / Redux / PostgreSQL / MongoDB / Jest / Detox / XCode / Android Studio / Git"

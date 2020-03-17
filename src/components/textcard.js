@@ -7,20 +7,19 @@ const TextCard = ({ text, title, color, onClick }) => {
       key={text}
       onClick={onClick}
       style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        margin: "0 0 1.45rem 15px",
         flex: 1,
         backgroundColor: color,
-        padding: "15px",
+        padding: "2rem",
+        margin: ".8rem 0",
         borderRadius: 6,
-        height: "8rem",
+        minWidth: 450,
+        maxWidth: 450,
         cursor: "pointer",
       }}
     >
       <span style={{ margin: 0 }}>
-        <h3 style={{ margin: 0 }}>{title}</h3>
+        <h3>{title}</h3>
+        <p style={{ margin: 0 }}>{text}</p>
       </span>
     </span>
   )

@@ -3,8 +3,8 @@ import React from "react"
 
 const TextBlurb = ({ text = "", summary = "" }) => {
   return (
-    <div style={{ flex: 1, margin: "0 10px" }}>
-      <h3 style={{ margin: 0 }}>{text}</h3>
+    <div style={{ flex: 1, margin: "0 1rem 4rem 1rem" }}>
+      <h4 style={{ margin: 0 }}>{text}</h4>
       <p>{summary}</p>
     </div>
   )

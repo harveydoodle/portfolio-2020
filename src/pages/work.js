@@ -12,21 +12,17 @@ const ImageTextCard = ({ workData, visible }) => {
   }
   return (
     <>
-      <div
-        key={workData.id}
-        class="fadeMe"
-        style={{ display: "flex", margin: 20 }}
-      >
+      <div key={workData.id} class="fadeMe" style={{ display: "flex", margin: '2rem 0' }}>
         <ProjectImage
-          styles={{ flex: 1, margin: "0 10px" }}
+          styles={{ flex: 1, margin: "0 1rem 2rem 1rem" }}
           image={workData.images[0]}
         />
         <ProjectImage
-          styles={{ flex: 1, margin: "0 10px" }}
+          styles={{ flex: 1, margin: "0 1rem 2rem 1rem" }}
           image={workData.images[1]}
         />
-        <span style={{ flex: 2, margin: "0 10px" }}>
-          <h3>{workData.text}</h3>
+        <span style={{ flex: 2, margin: "0 1rem 2rem 1rem" }}>
+          {/* <h3>{workData.title}</h3> */}
           <ul>
             {workData.details.map(each => (
               <li>{each}</li>
@@ -49,15 +45,20 @@ const Work = () => {
     setWork(key)
   }
   return (
-    <>
-      <h2>Work & Projects</h2>
-      <span style={{ display: "flex", flexWrap: "wrap" }}>
+    <div style={{ margin: "0 0 4rem 0" }}>
+      <span
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+        }}
+      >
         {Object.values(workConstants).map((each, key) => (
           <TextCard {...each} key={key} onClick={() => handleClick(key)} />
         ))}
       </span>
       <ImageTextCard workData={workData} visible={visible} />
-    </>
+    </div>
   )
 }
 

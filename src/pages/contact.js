@@ -6,46 +6,43 @@ import resume from "../files/resume.pdf"
 
 const Contact = () => (
   <>
-    <h2>Contact</h2>
-    <span
-      style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
-    >
+    <span style={{ display: "flex", flexWrap: "wrap", margin: "0 0 4rem 0" }}>
       <Link
         rel="noopener noreferrer"
-        style={{ fontSize: "2.5rem", margin: 10 }}
+        style={{ fontSize: "2.5rem", margin: "0 1.1rem" }}
         target="_blank"
         href={resume}
       >
-        <FontAwesomeIcon icon="file" style={{ color: "#000000" }} />
+        <FontAwesomeIcon icon="file" style={{ color: "#464646" }} />
       </Link>
       <Link
         rel="noopener noreferrer"
-        style={{ fontSize: "2.5rem", margin: 10 }}
+        style={{ fontSize: "2.5rem", margin: "0 1.1rem" }}
         target="_blank"
         href="https://github.com/harveydoodle"
       >
         <FontAwesomeIcon
           icon={["fab", "github"]}
-          style={{ color: "#000000" }}
+          style={{ color: "#464646" }}
         />
       </Link>
       <Link
         rel="noopener noreferrer"
-        style={{ fontSize: "2.5rem", margin: 10 }}
+        style={{ fontSize: "2.5rem", margin: "0 1.1rem" }}
         target="_blank"
         href="mailto:linye.zhang18@gmail.com"
       >
-        <FontAwesomeIcon icon="envelope" style={{ color: "#000000" }} />
+        <FontAwesomeIcon icon="envelope" style={{ color: "#464646" }} />
       </Link>
       <Link
         rel="noopener noreferrer"
-        style={{ fontSize: "2.5rem", margin: 10 }}
+        style={{ fontSize: "2.5rem", margin: "0 1.1rem" }}
         target="_blank"
         href="https://www.linkedin.com/in/annielyzhangs"
       >
         <FontAwesomeIcon
           icon={["fab", "linkedin"]}
-          style={{ color: "#000000" }}
+          style={{ color: "#464646" }}
         />
       </Link>
     </span>
