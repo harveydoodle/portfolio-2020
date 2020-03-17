@@ -1,10 +1,14 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
+import Layout from "../components/layout"
+import Emoji from "../components/emoji"
+
 import resume from "../files/resume.pdf"
 
 const Contact = () => (
-  <>
+  <Layout>
+  <h1>Find me <Emoji symbol="⬇️" label="down arrow" /></h1>
     <span
       style={{
         display: "flex",
@@ -51,7 +55,7 @@ const Contact = () => (
         />
       </a>
     </span>
-  </>
+  </Layout>
 )
 
 export default Contact

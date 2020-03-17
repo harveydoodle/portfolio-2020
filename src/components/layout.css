@@ -113,6 +113,7 @@ select,
 textarea {
   text-transform: none;
   font: inherit;
+  color: #464646;
   margin: 0;
   background-color: transparent;
   border: none;
@@ -125,6 +126,7 @@ optgroup {
 button,
 input {
   overflow: visible;
+  color: #464646;
 }
 [type="reset"],
 [type="submit"],

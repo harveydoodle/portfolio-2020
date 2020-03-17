@@ -20,7 +20,7 @@ export const workConstants = {
     color: "rgba(204,204,204,0.3)",
     images: ["tenalogin.jpg", "residentslist.jpg"],
     details: [
-      "User-friendly features with miniscule chances of bugs",
+      "User-friendly features with miniscule chances of app failure/bugs",
       "Wrote extensive tests with Jest and Enzyme",
       "Learned React Native and Redux in a short amount of time and became lead mobile on multiple projects following",
     ],
