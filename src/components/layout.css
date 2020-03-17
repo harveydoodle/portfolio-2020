@@ -615,18 +615,18 @@ pre tt:after {
   }
 }
 .fadeMe {
-  animation:fadeIn 0.5s linear;
+  animation: fadeIn 0.5s linear;
 }
 
 @keyframes fadeIn {
   0% {
-    opacity:0
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 .fadeMe.none {
-  display:none
+  display: none;
 }

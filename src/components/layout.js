@@ -9,11 +9,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faFile, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { fab, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faFile, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 import Header from "./header"
+import SEO from "./components/seo"
+
 import "./layout.css"
 
 library.add(fab, faFile, faLinkedin, faEnvelope, faGithub)
@@ -31,7 +33,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={''} />
+      <Header siteTitle={""} />
       <div
         style={{
           margin: `0 auto`,
@@ -39,6 +41,7 @@ const Layout = ({ children }) => {
           padding: `7rem 0.5rem 1.0875rem 0.5rem`,
         }}
       >
+      <SEO title="Annie Zhang | Software Developer" />
         <main>{children}</main>
       </div>
     </>

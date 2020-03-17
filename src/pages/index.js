@@ -6,13 +6,11 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 
 // sections
-import Work from '../pages/work';
-import Contact from '../pages/contact';
-import About from '../pages/about';
+import Work from "../pages/work"
+import Contact from "../pages/contact"
+import About from "../pages/about"
 
-const text = [
-  
-]
+const text = []
 
 const IndexPage = () => (
   <Layout>

@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { StaticQuery, graphql } from 'gatsby';
-import Image from 'gatsby-image';
+import React, { Component } from "react"
+import PropTypes from "prop-types"
+import { StaticQuery, graphql } from "gatsby"
+import Image from "gatsby-image"
 
 const findImageName = (element, image) =>
-  element.node.fluid.src.split('/').pop() === image;
+  element.node.fluid.src.split("/").pop() === image
 
 export default class ProjectImage extends Component {
   static propTypes = {
@@ -12,16 +12,16 @@ export default class ProjectImage extends Component {
     alt: PropTypes.string,
     style: PropTypes.object,
     className: PropTypes.string,
-  };
+  }
 
   static defaultProps = {
-    alt: '',
+    alt: "",
     style: undefined,
     className: undefined,
-  };
+  }
 
   render() {
-    const { image } = this.props;
+    const { image } = this.props
 
     // if (!constants.USE_LOCAL) {s
 
@@ -41,29 +41,29 @@ export default class ProjectImage extends Component {
           }
         `}
         render={data => {
-          const images = data.allImageSharp.edges;
+          const images = data.allImageSharp.edges
           const node =
             images.find(element =>
               // Match string after final slash
-              findImageName(element, image),
+              findImageName(element, image)
             ) ||
-            images.find(element => findImageName(element, 'placeholder.jpg'));
-          if (!node) return null;
+            images.find(element => findImageName(element, "placeholder.jpg"))
+          if (!node) return null
           return (
             <Image
               {...this.props}
               style={{
-                flex:1,
-                height:'100%',
-                width:'100%',
+                flex: 1,
+                height: "100%",
+                width: "100%",
                 maxWidth: 920,
                 ...this.props.styles,
               }}
               fluid={node.node.fluid}
             />
-          );
+          )
         }}
       />
-    );
+    )
   }
 }
