@@ -2,6 +2,5 @@
 
 To run: 
 
-```shell
 gatsby develop
-```
+
