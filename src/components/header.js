@@ -19,9 +19,19 @@ const Header = ({ navHandler }) => (
         padding: `1.45rem 2rem 1.0875rem 0`,
       }}
     >
-      <Link to='/' style={{ margin: "0 .5rem", textDecoration: 'none', color: '#464646' }}s>About</Link>
-      <button onClick={navHandler} style={{ margin: "0 .5rem" }}>Work</button>
-      <Link to='/contact' style={{ margin: "0 .5rem", textDecoration: 'none', color: '#464646' }}>Contact</Link>
+      <Link
+        to="/"
+        style={{ margin: "0 .5rem", textDecoration: "none", color: "#464646" }}
+        s
+      >
+        About
+      </Link>
+      <Link
+        to="/contact"
+        style={{ margin: "0 .5rem", textDecoration: "none", color: "#464646" }}
+      >
+        Contact
+      </Link>
     </div>
   </header>
 )

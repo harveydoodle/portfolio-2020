@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import PropTypes from "prop-types"
 
 import { workConstants } from "../constants/work"
@@ -12,7 +12,11 @@ const ImageTextCard = ({ workData, visible }) => {
   }
   return (
     <>
-      <div key={workData.id} class="fadeMe" style={{ display: "flex", margin: '2rem 0' }}>
+      <div
+        key={workData.id}
+        class="fadeMe"
+        style={{ display: "flex", margin: "2rem 0" }}
+      >
         <ProjectImage
           styles={{ flex: 1, margin: "0 1rem 2rem 1rem" }}
           image={workData.images[0]}
@@ -22,7 +26,6 @@ const ImageTextCard = ({ workData, visible }) => {
           image={workData.images[1]}
         />
         <span style={{ flex: 2, margin: "0 1rem 2rem 1rem" }}>
-          {/* <h3>{workData.title}</h3> */}
           <ul>
             {workData.details.map(each => (
               <li>{each}</li>
@@ -39,6 +42,14 @@ const Work = () => {
   const [visible, setVisible] = useState(false)
   const workKey = Object.keys(workConstants)[work]
   const workData = workConstants[workKey]
+
+  const projectRef = useRef(null)
+
+  const scrollToBottom = hel => {
+    projectRef.current.scrollIntoView({ behavior: "smooth" })
+  }
+
+  useEffect(scrollToBottom, [work])
 
   const handleClick = key => {
     setVisible(true)
@@ -57,7 +68,9 @@ const Work = () => {
           <TextCard {...each} key={key} onClick={() => handleClick(key)} />
         ))}
       </span>
-      <ImageTextCard workData={workData} visible={visible} />
+      <div ref={projectRef}>
+        <ImageTextCard workData={workData} visible={visible} />
+      </div>
     </div>
   )
 }

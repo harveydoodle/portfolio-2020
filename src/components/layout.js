@@ -21,7 +21,9 @@ import "./layout.css"
 library.add(fab, faFile, faLinkedin, faEnvelope, faGithub)
 
 const Layout = ({ children }) => {
-  const navHandler = ()=>{console.log('ssss')}
+  const navHandler = () => {
+    console.log("ssss")
+  }
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -34,12 +36,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header navHandler={navHandler}/>
+      <Header navHandler={navHandler} />
       <div
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `7rem 0.5rem 1.0875rem 0.5rem`,
+          padding: `7rem 0.5rem 5rem 0.5rem`,
         }}
       >
         <SEO title="Annie Zhang | Software Developer" />

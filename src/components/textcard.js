@@ -13,13 +13,28 @@ const TextCard = ({ text, title, color, onClick }) => {
         margin: ".8rem 0",
         borderRadius: 6,
         minWidth: 450,
+        height: 380,
+        position: "relative",
         maxWidth: 450,
         cursor: "pointer",
       }}
     >
       <span style={{ margin: 0 }}>
-        <h3>{title}</h3>
-        <p style={{ margin: 0 }}>{text}</p>
+        <>
+          <h3>{title}</h3>
+          <p style={{ margin: 0 }}>{text}</p>
+        </>
+        <p
+          style={{
+            bottom: "2rem",
+            left: "2rem",
+            margin: 0,
+            fontStyle: "italic",
+            position: "absolute",
+          }}
+        >
+          Learn more
+        </p>
       </span>
     </span>
   )
