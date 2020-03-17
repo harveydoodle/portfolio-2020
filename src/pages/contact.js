@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import resume from "../files/resume.pdf"
@@ -7,15 +6,15 @@ import resume from "../files/resume.pdf"
 const Contact = () => (
   <>
     <span style={{ display: "flex", flexWrap: "wrap", margin: "0 0 4rem 0" }}>
-      <Link
+      <a
         rel="noopener noreferrer"
         style={{ fontSize: "2.5rem", margin: "0 1.1rem" }}
         target="_blank"
         href={resume}
       >
         <FontAwesomeIcon icon="file" style={{ color: "#464646" }} />
-      </Link>
-      <Link
+      </a>
+      <a
         rel="noopener noreferrer"
         style={{ fontSize: "2.5rem", margin: "0 1.1rem" }}
         target="_blank"
@@ -25,16 +24,16 @@ const Contact = () => (
           icon={["fab", "github"]}
           style={{ color: "#464646" }}
         />
-      </Link>
-      <Link
+      </a>
+      <a
         rel="noopener noreferrer"
         style={{ fontSize: "2.5rem", margin: "0 1.1rem" }}
         target="_blank"
         href="mailto:linye.zhang18@gmail.com"
       >
         <FontAwesomeIcon icon="envelope" style={{ color: "#464646" }} />
-      </Link>
-      <Link
+      </a>
+      <a
         rel="noopener noreferrer"
         style={{ fontSize: "2.5rem", margin: "0 1.1rem" }}
         target="_blank"
@@ -44,7 +43,7 @@ const Contact = () => (
           icon={["fab", "linkedin"]}
           style={{ color: "#464646" }}
         />
-      </Link>
+      </a>
     </span>
   </>
 )
