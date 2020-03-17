@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={""} />
+      <Header />
       <div
         style={{
           margin: `0 auto`,
@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
           padding: `7rem 0.5rem 1.0875rem 0.5rem`,
         }}
       >
-      <SEO title="Annie Zhang | Software Developer" />
+        <SEO title="Annie Zhang | Software Developer" />
         <main>{children}</main>
       </div>
     </>
