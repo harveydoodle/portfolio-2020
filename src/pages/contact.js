@@ -47,7 +47,7 @@ const Contact = () => (
         rel="noopener noreferrer"
         style={{ fontSize: "2.3rem", margin: "0 1.2rem 0 0" }}
         target="_blank"
-        href="https://www.linkedin.com/in/annielyzhangs"
+        href="https://www.linkedin.com/in/annielyzhang"
       >
         <FontAwesomeIcon
           icon={["fab", "linkedin"]}
