@@ -1,14 +1,14 @@
 const express = require('express');
 const app = express();
 
-const PORT = (process.env.PORT || 7007);
+app.set('port', (process.env.PORT || 8080));
 
-app.use(express.static(__dirname + '/rest-react-front/build'));
+app.use(express.static(__dirname + '/public'));
 
-app.get('*', (req,res)=>{
-    res.sendFile('index.html', {root: __dirname + '/rest-react-front/build'})
-})
+app.get('/', function(request, response) {
+  response.send('index')
+});
 
-app.listen(PORT, () =>{
-    console.log('Listening on port ' + PORT)
-})
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
