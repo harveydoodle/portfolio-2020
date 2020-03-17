@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 
-import Image from "../components/image"
 import Blurb from "../components/textblurb"
 import Emoji from "../components/emoji"
 

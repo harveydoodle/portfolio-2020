@@ -1,11 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-import Image from "./image"
-import ProjectImage from "./projectimage"
-
-const colors = ["pink", "grey", "lightblue"]
-
 const TextCard = ({ text, title, color, onClick }) => {
   return (
     <span
@@ -21,6 +16,7 @@ const TextCard = ({ text, title, color, onClick }) => {
         padding: "15px",
         borderRadius: 6,
         height: "8rem",
+        cursor: "pointer",
       }}
     >
       <span style={{ margin: 0 }}>

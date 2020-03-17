@@ -1,7 +1,6 @@
 import React from "react"
+import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
-import TextCard from "../components/textcard"
 
 import resume from "../files/resume.pdf"
 
@@ -11,14 +10,16 @@ const Contact = () => (
     <span
       style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
     >
-      <a
+      <Link
+        rel="noopener noreferrer"
         style={{ fontSize: "2.5rem", margin: 10 }}
         target="_blank"
         href={resume}
       >
         <FontAwesomeIcon icon="file" style={{ color: "#000000" }} />
-      </a>
-      <a
+      </Link>
+      <Link
+        rel="noopener noreferrer"
         style={{ fontSize: "2.5rem", margin: 10 }}
         target="_blank"
         href="https://github.com/harveydoodle"
@@ -27,15 +28,17 @@ const Contact = () => (
           icon={["fab", "github"]}
           style={{ color: "#000000" }}
         />
-      </a>
-      <a
+      </Link>
+      <Link
+        rel="noopener noreferrer"
         style={{ fontSize: "2.5rem", margin: 10 }}
         target="_blank"
         href="mailto:linye.zhang18@gmail.com"
       >
         <FontAwesomeIcon icon="envelope" style={{ color: "#000000" }} />
-      </a>
-      <a
+      </Link>
+      <Link
+        rel="noopener noreferrer"
         style={{ fontSize: "2.5rem", margin: 10 }}
         target="_blank"
         href="https://www.linkedin.com/in/annielyzhangs"
@@ -44,7 +47,7 @@ const Contact = () => (
           icon={["fab", "linkedin"]}
           style={{ color: "#000000" }}
         />
-      </a>
+      </Link>
     </span>
   </>
 )

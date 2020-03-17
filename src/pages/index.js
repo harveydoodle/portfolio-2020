@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -7,8 +6,6 @@ import Layout from "../components/layout"
 import Work from "../pages/work"
 import Contact from "../pages/contact"
 import About from "../pages/about"
-
-const text = []
 
 const IndexPage = () => (
   <Layout>
