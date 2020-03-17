@@ -1,9 +1,6 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-
 import TextCard from "../components/textcard"
 
 import resume from "../files/resume.pdf"

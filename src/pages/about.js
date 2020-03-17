@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
 import Image from "../components/image"
 import Blurb from "../components/textblurb"
 import Emoji from "../components/emoji"

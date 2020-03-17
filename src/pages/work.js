@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-
 import { workConstants } from "../constants/work"
+
 import TextCard from "../components/textcard"
 import ProjectImage from "../components/projectimage"
 
