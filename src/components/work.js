@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 
 import { workConstants } from "../constants/work"
 
-import TextCard from "../components/textcard"
-import ProjectImage from "../components/projectimage"
+import TextCard from "./textcard"
+import ProjectImage from "./projectimage"
 
 const ImageTextCard = ({ workData, visible }) => {
   if (!visible) {

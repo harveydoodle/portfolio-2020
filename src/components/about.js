@@ -1,7 +1,7 @@
 import React from "react"
 
-import Blurb from "../components/textblurb"
-import Emoji from "../components/emoji"
+import Blurb from "./textblurb"
+import Emoji from "./emoji"
 
 const About = () => (
   <>

@@ -111,8 +111,13 @@ input,
 optgroup,
 select,
 textarea {
+  text-transform: none;
   font: inherit;
   margin: 0;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  outline: 0;
 }
 optgroup {
   font-weight: 700;
@@ -120,10 +125,6 @@ optgroup {
 button,
 input {
   overflow: visible;
-}
-button,
-select {
-  text-transform: none;
 }
 [type="reset"],
 [type="submit"],

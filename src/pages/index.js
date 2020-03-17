@@ -3,9 +3,9 @@ import React from "react"
 import Layout from "../components/layout"
 
 // sections
-import Work from "../pages/work"
+import Work from "../components/work"
 import Contact from "../pages/contact"
-import About from "../pages/about"
+import About from "../components/about"
 
 const IndexPage = () => (
   <Layout>

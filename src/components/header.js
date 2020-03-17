@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({}) => (
+const Header = ({ navHandler }) => (
   <header
     style={{
       position: "fixed",
@@ -19,19 +19,17 @@ const Header = ({}) => (
         padding: `1.45rem 2rem 1.0875rem 0`,
       }}
     >
-      <p style={{ margin: "0 .5rem" }}>About</p>
-      <p style={{ margin: "0 .5rem" }}>Work</p>
-      <p style={{ margin: "0 .5rem" }}>Contact</p>
+      <button onClick={navHandler} style={{ margin: "0 .5rem" }}>About</button>
+      <button onClick={navHandler} style={{ margin: "0 .5rem" }}>Work</button>
+      <button onClick={navHandler} style={{ margin: "0 .5rem" }}>Contact</button>
     </div>
   </header>
 )
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  navHandler: PropTypes.func.isRequired,
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+Header.defaultProps = {}
 
 export default Header
