@@ -66,7 +66,7 @@ ImageTextCard.propTypes = {
   visible: PropTypes.bool,
 }
 
-TexImageTextCardtBlurb.defaultProps = {
+ImageTextCard.defaultProps = {
   workData: {},
   visible: false,
 }
