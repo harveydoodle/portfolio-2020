@@ -8,7 +8,6 @@ import TextCard from '../components/textcard'
 import ProjectImage from '../components/projectimage';
 
 const ImageTextCard = ({ workData, visible }) => {
-  console.log('ImageTextCard hit')
   if (!visible) {
     return null
   }
@@ -44,7 +43,7 @@ const Work = () => {
     <>
         <SEO title="Work and Projects" />
         <h2>Work & Projects</h2>
-        <span style={{display:'flex'}}>
+        <span style={{display:'flex',flexWrap:'wrap', }}>
           {Object.values(workConstants).map(
             (each, key) => (
               <TextCard {...each} key={key} onClick={()=>handleClick(key)} />

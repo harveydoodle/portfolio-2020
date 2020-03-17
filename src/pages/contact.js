@@ -12,7 +12,7 @@ const Contact = () => (
     <>
         <SEO title="Contact info" />
         <h2>Contact</h2>
-        <span style={{display:'flex', justifyContent:'center'}}>
+        <span style={{display:'flex', justifyContent:'center', flexWrap:'wrap', }}>
             <a style={{fontSize: '2.5rem', margin: 10}} target="_blank" href={resume}>
                 <FontAwesomeIcon icon="file" style={{color:"#000000"}} />
             </a>

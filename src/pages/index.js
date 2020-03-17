@@ -4,9 +4,6 @@ import { Link } from "gatsby"
 import SEO from "../components/seo"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
-import Blurb from "../components/textblurb"
-import Emoji from "../components/emoji"
 
 // sections
 import Work from '../pages/work';

@@ -1,7 +1,7 @@
 export const workConstants = {
     'quartermaster': {
         id: 1,
-        title: 'Quartermaster',
+        title: 'Quartermaster Home',
         text: 'Web and mobile apps that help homeowners digitally organize their home and connect with their commuinty.',
         color:'#d394b4',
         images: ['chores.png','habits.png'],
@@ -9,7 +9,7 @@ export const workConstants = {
     },
     'evenset': {
         id: 2,
-        title: 'TENA',
+        title: 'TENA Sensassure',
         text: 'Web and mobile apps that tracks wetness of briefs to help caregivers provide better assistance.',
         color:'#CCC',
         images: ['tenalogin.jpg', 'residentslist.jpg'],

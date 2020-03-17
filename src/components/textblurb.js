@@ -4,7 +4,6 @@ import React from "react"
 
 const TextBlurb = ({ text = '', summary = '' }) => {
     return (
-        // make responsive
         <div style={{ flex: 1, margin: '0 10px' }}>
             <h3 style={{ margin: 0 }}>
                 {text}
