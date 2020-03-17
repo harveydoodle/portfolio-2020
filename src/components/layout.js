@@ -14,7 +14,7 @@ import { fab, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faFile, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 import Header from "./header"
-import SEO from "./components/seo"
+import SEO from "./seo"
 
 import "./layout.css"
 
