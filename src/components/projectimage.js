@@ -57,7 +57,7 @@ export default class ProjectImage extends Component {
                 height:'100%',
                 width:'100%',
                 maxWidth: 920,
-                margin: '0 auto', // Used to center the image
+                ...this.props.styles,
               }}
               fluid={node.node.fluid}
             />

@@ -21,6 +21,6 @@ export const workConstants = {
         text: 'iOS app inspired by my dog',
         color:'lightblue',
         images: ['home.png','listing.png'],
-        details: ['iOS app about my dog built over the weekend', 'Designed illustrations with Sketch', 'Built with Create React Native App and Expo']
+        details: ["iOS app about my dog's favourite food, and favourite dog parks using Mapbox", 'Designed illustrations with Sketch', 'Built with Create React Native App and Expo']
         }
 }

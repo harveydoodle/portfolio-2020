@@ -14,9 +14,9 @@ const ImageTextCard = ({ workData, visible }) => {
   }
   return (
     <>
-    <div key={workData.id} class="fadeMe" style={{display:'flex'}}>
-    <ProjectImage style={{ flex:1, margin:'0 20px' }} image={workData.images[0]}/>
-    <ProjectImage style={{ flex:1, margin:'0 20px' }} image={workData.images[1]}/>
+    <div key={workData.id} class="fadeMe" style={{display:'flex', margin: 20}}>
+    <ProjectImage styles={{ flex:1, margin:'0 10px' }} image={workData.images[0]}/>
+    <ProjectImage styles={{ flex:1, margin:'0 10px' }} image={workData.images[1]}/>
     <span style={{flex:2, margin:'0 10px'}}>
       <h3>
         {workData.text}
