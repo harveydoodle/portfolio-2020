@@ -22,7 +22,6 @@ const Header = ({ navHandler }) => (
       <Link
         to="/"
         style={{ margin: "0 .5rem", textDecoration: "none", color: "#464646" }}
-        s
       >
         About
       </Link>

@@ -28,7 +28,7 @@ const ImageTextCard = ({ workData, visible }) => {
         <span style={{ flex: 2, margin: "0 1rem 2rem 1rem" }}>
           <ul>
             {workData.details.map(each => (
-              <li>{each}</li>
+              <li key={each}>{each}</li>
             ))}
           </ul>
         </span>
