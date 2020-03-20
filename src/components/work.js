@@ -45,8 +45,10 @@ const Work = () => {
 
   const projectRef = useRef(null)
 
-  const scrollToBottom = hel => {
-    projectRef.current.scrollIntoView({ behavior: "smooth" })
+  const scrollToBottom = () => {
+    if (work) {
+      projectRef.current.scrollIntoView({ behavior: "smooth" })
+    }
   }
 
   useEffect(scrollToBottom, [work])
