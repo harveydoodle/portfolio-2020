@@ -2,5 +2,6 @@
 
 To run: 
 ```
+yarn
 gatsby develop
 ```
