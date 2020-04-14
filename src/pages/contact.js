@@ -1,5 +1,6 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 import Layout from "../components/layout"
 import Emoji from "../components/emoji"
@@ -16,15 +17,15 @@ const Contact = () => (
         margin: "0 0 4rem 0",
       }}
     >
-      <a
+      <OutboundLink
         rel="noopener noreferrer"
         style={{ fontSize: "2.3rem", margin: "0 1.2rem 0 0" }}
         target="_blank"
         href={resume}
       >
         <FontAwesomeIcon icon="file" style={{ color: "#464646" }} />
-      </a>
-      <a
+      </OutboundLink>
+      <OutboundLink
         rel="noopener noreferrer"
         style={{ fontSize: "2.3rem", margin: "0 1.2rem 0 0" }}
         target="_blank"
@@ -34,16 +35,16 @@ const Contact = () => (
           icon={["fab", "github"]}
           style={{ color: "#464646" }}
         />
-      </a>
-      <a
+      </OutboundLink>
+      <OutboundLink
         rel="noopener noreferrer"
         style={{ fontSize: "2.3rem", margin: "0 1.2rem 0 0" }}
         target="_blank"
         href="mailto:linye.zhang18@gmail.com"
       >
         <FontAwesomeIcon icon="envelope" style={{ color: "#464646" }} />
-      </a>
-      <a
+      </OutboundLink>
+      <OutboundLink
         rel="noopener noreferrer"
         style={{ fontSize: "2.3rem", margin: "0 1.2rem 0 0" }}
         target="_blank"
@@ -53,7 +54,7 @@ const Contact = () => (
           icon={["fab", "linkedin"]}
           style={{ color: "#464646" }}
         />
-      </a>
+      </OutboundLink>
     </span>
   </Layout>
 )
