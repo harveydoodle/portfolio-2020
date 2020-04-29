@@ -14,7 +14,7 @@ const ImageTextCard = ({ workData, visible }) => {
     <>
       <div
         key={workData.id}
-        class="fadeMe"
+        className="fadeMe"
         style={{ display: "flex", margin: "2rem 0" }}
       >
         <ProjectImage
@@ -46,7 +46,7 @@ const Work = () => {
   const projectRef = useRef(null)
 
   const scrollToBottom = () => {
-    if (work) {
+    if (work !== null) {
       projectRef.current.scrollIntoView({ behavior: "smooth" })
     }
   }
