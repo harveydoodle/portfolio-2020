@@ -22,7 +22,6 @@ library.add(fab, faFile, faLinkedin, faEnvelope, faGithub)
 
 const Layout = ({ children }) => {
   const navHandler = () => {
-    console.log("ssss")
   }
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
